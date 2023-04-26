@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf build && cd ../client && rm -rf build && npm run build --prod && cp -r build ../server"
+    "build:ui": "rm -rf build && cd ../client && rm -rf build && npm run build --prod && cp -r build ../server",
+    "pythagora-test": "npx pythagora --init-command \"node index.js\" --mode test --full-code-coverage-report",
+    "pythagora-capture": "npx pythagora --init-command \"node index.js\" --mode capture --no-code-coverage",
+    "pythagora-review": "npx pythagora --review"
   },
   "author": "Amandeep S.",
   "license": "ISC",
@@ -20,6 +23,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.0",
     "mongoose-unique-validator": "^2.0.3",
+    "pythagora": "^0.0.45",
     "validator": "^13.1.1"
   },
   "devDependencies": {

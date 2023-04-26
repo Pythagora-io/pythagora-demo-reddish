@@ -1,0 +1,541 @@
+[
+  {
+    "id": "94d59d37-5a5b-44e1-80bc-f7a5e31b29d4",
+    "endpoint": "/api/subreddits/644940a896050cf38e18385d/subscribe",
+    "url": "http://localhost:3005/api/subreddits/644940a896050cf38e18385d/subscribe",
+    "body": {},
+    "method": "OPTIONS",
+    "headers": {
+      "host": "localhost:3005",
+      "connection": "keep-alive",
+      "accept": "*/*",
+      "access-control-request-method": "POST",
+      "access-control-request-headers": "x-auth-token",
+      "origin": "http://localhost:3000",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:3000/",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-US,en;q=0.9"
+    },
+    "responseData": "",
+    "traceId": 6257,
+    "trace": [],
+    "intermediateData": [],
+    "query": {},
+    "params": {},
+    "asyncStore": 28,
+    "mongoQueriesCapture": 0,
+    "traceLegacy": [
+      6257
+    ],
+    "statusCode": 204,
+    "createdAt": "2023-04-26T15:19:24.755Z"
+  },
+  {
+    "id": "50a52aa6-cee4-4f75-af56-e832559a0094",
+    "endpoint": "/api/subreddits/644940a896050cf38e18385d/subscribe",
+    "url": "http://localhost:3005/api/subreddits/644940a896050cf38e18385d/subscribe",
+    "body": {},
+    "method": "POST",
+    "headers": {
+      "host": "localhost:3005",
+      "connection": "keep-alive",
+      "content-length": "0",
+      "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/x-www-form-urlencoded",
+      "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDk0MGY3OTYwNTBjZjM4ZTE4Mzg5ZSIsImlhdCI6MTY4MjUyMjM1OX0.NrzQo6rc1IUSRElT_C0_Nt_fsKhGQNcjxCTEWUsfn8M",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "origin": "http://localhost:3000",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:3000/",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-US,en;q=0.9"
+    },
+    "responseData": "",
+    "traceId": 6278,
+    "trace": [],
+    "intermediateData": [
+      {
+        "type": "mongodb",
+        "id": "523382c4-7916-4daf-99ef-2c5b238f0429",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "subscriberCount": 1,
+            "subredditName": "FirstSubreddish",
+            "description": "just a description",
+            "admin": "ObjectId(\"6449408996050cf38e183858\")",
+            "createdAt": "Date(\"2023-04-26T15:18:00.800Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.136Z\")",
+            "__v": 3
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940a896050cf38e18385d\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "find",
+        "db": "reddish",
+        "collection": "subreddits",
+        "mongoRes": {
+          "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+          "posts": [
+            "ObjectId(\"644940ba96050cf38e183877\")"
+          ],
+          "subscribedBy": [
+            "ObjectId(\"6449408996050cf38e183858\")"
+          ],
+          "subscriberCount": 1,
+          "subredditName": "FirstSubreddish",
+          "description": "just a description",
+          "admin": "ObjectId(\"6449408996050cf38e183858\")",
+          "createdAt": "Date(\"2023-04-26T15:18:00.800Z\")",
+          "updatedAt": "Date(\"2023-04-26T15:18:18.136Z\")",
+          "__v": 3
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "subscriberCount": 1,
+            "subredditName": "FirstSubreddish",
+            "description": "just a description",
+            "admin": "ObjectId(\"6449408996050cf38e183858\")",
+            "createdAt": "Date(\"2023-04-26T15:18:00.800Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.136Z\")",
+            "__v": 3
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "f12d61af-1063-4bfb-bae6-a8d3da085633",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "subscriberCount": 1,
+            "subredditName": "FirstSubreddish",
+            "description": "just a description",
+            "admin": "ObjectId(\"6449408996050cf38e183858\")",
+            "createdAt": "Date(\"2023-04-26T15:18:00.800Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.136Z\")",
+            "__v": 3
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940a896050cf38e18385d\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "findOne",
+        "db": "reddish",
+        "collection": "subreddits",
+        "mongoRes": {
+          "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+          "posts": [
+            "ObjectId(\"644940ba96050cf38e183877\")"
+          ],
+          "subscribedBy": [
+            "ObjectId(\"6449408996050cf38e183858\")"
+          ],
+          "subscriberCount": 1,
+          "subredditName": "FirstSubreddish",
+          "description": "just a description",
+          "admin": "ObjectId(\"6449408996050cf38e183858\")",
+          "createdAt": "Date(\"2023-04-26T15:18:00.800Z\")",
+          "updatedAt": "Date(\"2023-04-26T15:18:18.136Z\")",
+          "__v": 3
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "subscriberCount": 1,
+            "subredditName": "FirstSubreddish",
+            "description": "just a description",
+            "admin": "ObjectId(\"6449408996050cf38e183858\")",
+            "createdAt": "Date(\"2023-04-26T15:18:00.800Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.136Z\")",
+            "__v": 3
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "9da10921-a95f-46df-8902-011117010948",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 0,
+              "commentKarma": 0
+            },
+            "posts": [],
+            "subscribedSubs": [],
+            "totalComments": 0,
+            "username": "pythagora2",
+            "passwordHash": "$2b$10$k0Jfcz0xj.iVdnFNqR7Ws.y4cZp1b1kbGLW9D0lUI/c71a0SELVH.",
+            "createdAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "__v": 0
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940f796050cf38e18389e\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "find",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+          "avatar": {
+            "exists": false,
+            "imageLink": "null",
+            "imageId": "null"
+          },
+          "karmaPoints": {
+            "postKarma": 0,
+            "commentKarma": 0
+          },
+          "posts": [],
+          "subscribedSubs": [],
+          "totalComments": 0,
+          "username": "pythagora2",
+          "passwordHash": "$2b$10$k0Jfcz0xj.iVdnFNqR7Ws.y4cZp1b1kbGLW9D0lUI/c71a0SELVH.",
+          "createdAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+          "updatedAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+          "__v": 0
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 0,
+              "commentKarma": 0
+            },
+            "posts": [],
+            "subscribedSubs": [],
+            "totalComments": 0,
+            "username": "pythagora2",
+            "passwordHash": "$2b$10$k0Jfcz0xj.iVdnFNqR7Ws.y4cZp1b1kbGLW9D0lUI/c71a0SELVH.",
+            "createdAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "__v": 0
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "20e890dd-21eb-4ba7-88a4-c9538ea629f8",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 0,
+              "commentKarma": 0
+            },
+            "posts": [],
+            "subscribedSubs": [],
+            "totalComments": 0,
+            "username": "pythagora2",
+            "passwordHash": "$2b$10$k0Jfcz0xj.iVdnFNqR7Ws.y4cZp1b1kbGLW9D0lUI/c71a0SELVH.",
+            "createdAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "__v": 0
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940f796050cf38e18389e\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "findOne",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+          "avatar": {
+            "exists": false,
+            "imageLink": "null",
+            "imageId": "null"
+          },
+          "karmaPoints": {
+            "postKarma": 0,
+            "commentKarma": 0
+          },
+          "posts": [],
+          "subscribedSubs": [],
+          "totalComments": 0,
+          "username": "pythagora2",
+          "passwordHash": "$2b$10$k0Jfcz0xj.iVdnFNqR7Ws.y4cZp1b1kbGLW9D0lUI/c71a0SELVH.",
+          "createdAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+          "updatedAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+          "__v": 0
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 0,
+              "commentKarma": 0
+            },
+            "posts": [],
+            "subscribedSubs": [],
+            "totalComments": 0,
+            "username": "pythagora2",
+            "passwordHash": "$2b$10$k0Jfcz0xj.iVdnFNqR7Ws.y4cZp1b1kbGLW9D0lUI/c71a0SELVH.",
+            "createdAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "__v": 0
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "eae9c689-5a0e-4f7f-ae92-8d3812472399",
+        "preQueryRes": [],
+        "query": {
+          "$and": [
+            {
+              "_id": "ObjectId(\"644940a896050cf38e18385d\")"
+            },
+            {
+              "_id": {
+                "$ne": "ObjectId(\"644940a896050cf38e18385d\")"
+              }
+            }
+          ]
+        },
+        "otherArgs": {},
+        "options": {},
+        "op": "countDocuments",
+        "db": "reddish",
+        "collection": "subreddits",
+        "mongoRes": 0,
+        "postQueryRes": []
+      },
+      {
+        "type": "mongodb",
+        "id": "a4ac71db-acac-4d7d-8cb2-7eabf27b2d19",
+        "preQueryRes": [],
+        "query": {
+          "$and": [
+            {
+              "subredditName": "FirstSubreddish"
+            },
+            {
+              "_id": {
+                "$ne": "ObjectId(\"644940a896050cf38e18385d\")"
+              }
+            }
+          ]
+        },
+        "otherArgs": {},
+        "options": {},
+        "op": "countDocuments",
+        "db": "reddish",
+        "collection": "subreddits",
+        "mongoRes": 0,
+        "postQueryRes": []
+      },
+      {
+        "type": "mongodb",
+        "id": "d482295e-9b67-45ee-aef0-94e8d9f34f31",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "subscriberCount": 1,
+            "subredditName": "FirstSubreddish",
+            "description": "just a description",
+            "admin": "ObjectId(\"6449408996050cf38e183858\")",
+            "createdAt": "Date(\"2023-04-26T15:18:00.800Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.136Z\")",
+            "__v": 3
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940a896050cf38e18385d\")",
+          "__v": 3
+        },
+        "otherArgs": {
+          "update": {
+            "$set": {
+              "subscribedBy": [
+                "ObjectId(\"6449408996050cf38e183858\")",
+                "ObjectId(\"644940f796050cf38e18389e\")"
+              ],
+              "subscriberCount": 2,
+              "updatedAt": "Date(\"2023-04-26T15:19:24.775Z\")"
+            },
+            "$inc": {
+              "__v": 1
+            }
+          }
+        },
+        "options": {},
+        "op": "updateOne",
+        "db": "reddish",
+        "collection": "subreddits",
+        "mongoRes": {
+          "n": 1,
+          "nModified": 1,
+          "ok": 1
+        },
+        "postQueryRes": []
+      },
+      {
+        "type": "mongodb",
+        "id": "82f21092-4299-46db-bba7-d6b404346019",
+        "preQueryRes": [],
+        "query": {
+          "$and": [
+            {
+              "_id": "ObjectId(\"644940f796050cf38e18389e\")"
+            },
+            {
+              "_id": {
+                "$ne": "ObjectId(\"644940f796050cf38e18389e\")"
+              }
+            }
+          ]
+        },
+        "otherArgs": {},
+        "options": {},
+        "op": "countDocuments",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": 0,
+        "postQueryRes": []
+      },
+      {
+        "type": "mongodb",
+        "id": "6b265f9c-c707-40e9-9d3d-07603928e622",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 0,
+              "commentKarma": 0
+            },
+            "posts": [],
+            "subscribedSubs": [],
+            "totalComments": 0,
+            "username": "pythagora2",
+            "passwordHash": "$2b$10$k0Jfcz0xj.iVdnFNqR7Ws.y4cZp1b1kbGLW9D0lUI/c71a0SELVH.",
+            "createdAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:19:19.687Z\")",
+            "__v": 0
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940f796050cf38e18389e\")",
+          "__v": 0
+        },
+        "otherArgs": {
+          "update": {
+            "$set": {
+              "subscribedSubs": [
+                "ObjectId(\"644940a896050cf38e18385d\")"
+              ],
+              "updatedAt": "Date(\"2023-04-26T15:19:24.787Z\")"
+            },
+            "$inc": {
+              "__v": 1
+            }
+          }
+        },
+        "options": {},
+        "op": "updateOne",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "n": 1,
+          "nModified": 1,
+          "ok": 1
+        },
+        "postQueryRes": []
+      }
+    ],
+    "query": {},
+    "params": {},
+    "asyncStore": 29,
+    "mongoQueriesCapture": 9,
+    "statusCode": 201,
+    "traceLegacy": [
+      6278
+    ],
+    "createdAt": "2023-04-26T15:19:24.792Z"
+  }
+]

@@ -1,0 +1,973 @@
+[
+  {
+    "id": "35a48e63-cd75-41ae-bb69-b793f3650b29",
+    "endpoint": "/api/posts/644940ba96050cf38e183877/comment/644940c796050cf38e183885/downvote",
+    "url": "http://localhost:3005/api/posts/644940ba96050cf38e183877/comment/644940c796050cf38e183885/downvote",
+    "body": {},
+    "method": "OPTIONS",
+    "headers": {
+      "host": "localhost:3005",
+      "connection": "keep-alive",
+      "accept": "*/*",
+      "access-control-request-method": "POST",
+      "access-control-request-headers": "x-auth-token",
+      "origin": "http://localhost:3000",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:3000/",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-US,en;q=0.9"
+    },
+    "responseData": "",
+    "traceId": 2488,
+    "trace": [],
+    "intermediateData": [],
+    "query": {},
+    "params": {},
+    "asyncStore": 13,
+    "mongoQueriesCapture": 0,
+    "traceLegacy": [
+      2488
+    ],
+    "statusCode": 204,
+    "createdAt": "2023-04-26T18:03:22.382Z"
+  },
+  {
+    "id": "7737afa9-15c6-48d4-8db5-a503249871c9",
+    "endpoint": "/api/posts/644940ba96050cf38e183877/comment/644940c796050cf38e183885/downvote",
+    "url": "http://localhost:3005/api/posts/644940ba96050cf38e183877/comment/644940c796050cf38e183885/downvote",
+    "body": {},
+    "method": "POST",
+    "headers": {
+      "host": "localhost:3005",
+      "connection": "keep-alive",
+      "content-length": "0",
+      "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/x-www-form-urlencoded",
+      "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDk0MDg5OTYwNTBjZjM4ZTE4Mzg1OCIsImlhdCI6MTY4MjUzMjAxMH0.uJUCvEuaHSHMzWZwrZo35dxF-B6zhFdOYN4pXrTfUas",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "origin": "http://localhost:3000",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:3000/",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-US,en;q=0.9"
+    },
+    "responseData": "",
+    "traceId": 3435,
+    "trace": [],
+    "intermediateData": [
+      {
+        "type": "mongodb",
+        "id": "386c1e63-6dc8-4052-9143-fecfefe34dab",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+            "upvotedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "downvotedBy": [
+              "ObjectId(\"644940f796050cf38e18389e\")"
+            ],
+            "pointsCount": 0,
+            "voteRatio": 1,
+            "controversialAlgo": 2,
+            "commentCount": 2,
+            "title": "First post",
+            "subreddit": "ObjectId(\"644940a896050cf38e18385d\")",
+            "author": "ObjectId(\"6449408996050cf38e183858\")",
+            "postType": "Text",
+            "textSubmission": "This is text of first post",
+            "hotAlgo": 373893844.00644445,
+            "comments": [
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"644940c796050cf38e183885\")",
+                "commentedBy": "ObjectId(\"6449408996050cf38e183858\")",
+                "commentBody": "Hello! This was edited.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:18:31.432Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:18:56.738Z\")"
+              },
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"6449412496050cf38e1838c2\")",
+                "commentedBy": "ObjectId(\"644940f796050cf38e18389e\")",
+                "commentBody": "This is a comment.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:20:04.833Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:20:04.833Z\")"
+              }
+            ],
+            "createdAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "__v": 13
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940ba96050cf38e183877\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "find",
+        "db": "reddish",
+        "collection": "posts",
+        "mongoRes": {
+          "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+          "upvotedBy": [
+            "ObjectId(\"6449408996050cf38e183858\")"
+          ],
+          "downvotedBy": [
+            "ObjectId(\"644940f796050cf38e18389e\")"
+          ],
+          "pointsCount": 0,
+          "voteRatio": 1,
+          "controversialAlgo": 2,
+          "commentCount": 2,
+          "title": "First post",
+          "subreddit": "ObjectId(\"644940a896050cf38e18385d\")",
+          "author": "ObjectId(\"6449408996050cf38e183858\")",
+          "postType": "Text",
+          "textSubmission": "This is text of first post",
+          "hotAlgo": 373893844.00644445,
+          "comments": [
+            {
+              "upvotedBy": [
+                "ObjectId(\"644940f796050cf38e18389e\")",
+                "ObjectId(\"6449408996050cf38e183858\")"
+              ],
+              "downvotedBy": [],
+              "pointsCount": 2,
+              "_id": "ObjectId(\"644940c796050cf38e183885\")",
+              "commentedBy": "ObjectId(\"6449408996050cf38e183858\")",
+              "commentBody": "Hello! This was edited.",
+              "replies": [],
+              "createdAt": "Date(\"2023-04-26T15:18:31.432Z\")",
+              "updatedAt": "Date(\"2023-04-26T15:18:56.738Z\")"
+            },
+            {
+              "upvotedBy": [
+                "ObjectId(\"644940f796050cf38e18389e\")",
+                "ObjectId(\"6449408996050cf38e183858\")"
+              ],
+              "downvotedBy": [],
+              "pointsCount": 2,
+              "_id": "ObjectId(\"6449412496050cf38e1838c2\")",
+              "commentedBy": "ObjectId(\"644940f796050cf38e18389e\")",
+              "commentBody": "This is a comment.",
+              "replies": [],
+              "createdAt": "Date(\"2023-04-26T15:20:04.833Z\")",
+              "updatedAt": "Date(\"2023-04-26T15:20:04.833Z\")"
+            }
+          ],
+          "createdAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+          "updatedAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+          "__v": 13
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+            "upvotedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "downvotedBy": [
+              "ObjectId(\"644940f796050cf38e18389e\")"
+            ],
+            "pointsCount": 0,
+            "voteRatio": 1,
+            "controversialAlgo": 2,
+            "commentCount": 2,
+            "title": "First post",
+            "subreddit": "ObjectId(\"644940a896050cf38e18385d\")",
+            "author": "ObjectId(\"6449408996050cf38e183858\")",
+            "postType": "Text",
+            "textSubmission": "This is text of first post",
+            "hotAlgo": 373893844.00644445,
+            "comments": [
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"644940c796050cf38e183885\")",
+                "commentedBy": "ObjectId(\"6449408996050cf38e183858\")",
+                "commentBody": "Hello! This was edited.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:18:31.432Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:18:56.738Z\")"
+              },
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"6449412496050cf38e1838c2\")",
+                "commentedBy": "ObjectId(\"644940f796050cf38e18389e\")",
+                "commentBody": "This is a comment.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:20:04.833Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:20:04.833Z\")"
+              }
+            ],
+            "createdAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "__v": 13
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "04faf6b4-fc12-4157-995c-089d7d5a5b7e",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+            "upvotedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "downvotedBy": [
+              "ObjectId(\"644940f796050cf38e18389e\")"
+            ],
+            "pointsCount": 0,
+            "voteRatio": 1,
+            "controversialAlgo": 2,
+            "commentCount": 2,
+            "title": "First post",
+            "subreddit": "ObjectId(\"644940a896050cf38e18385d\")",
+            "author": "ObjectId(\"6449408996050cf38e183858\")",
+            "postType": "Text",
+            "textSubmission": "This is text of first post",
+            "hotAlgo": 373893844.00644445,
+            "comments": [
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"644940c796050cf38e183885\")",
+                "commentedBy": "ObjectId(\"6449408996050cf38e183858\")",
+                "commentBody": "Hello! This was edited.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:18:31.432Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:18:56.738Z\")"
+              },
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"6449412496050cf38e1838c2\")",
+                "commentedBy": "ObjectId(\"644940f796050cf38e18389e\")",
+                "commentBody": "This is a comment.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:20:04.833Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:20:04.833Z\")"
+              }
+            ],
+            "createdAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "__v": 13
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940ba96050cf38e183877\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "findOne",
+        "db": "reddish",
+        "collection": "posts",
+        "mongoRes": {
+          "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+          "upvotedBy": [
+            "ObjectId(\"6449408996050cf38e183858\")"
+          ],
+          "downvotedBy": [
+            "ObjectId(\"644940f796050cf38e18389e\")"
+          ],
+          "pointsCount": 0,
+          "voteRatio": 1,
+          "controversialAlgo": 2,
+          "commentCount": 2,
+          "title": "First post",
+          "subreddit": "ObjectId(\"644940a896050cf38e18385d\")",
+          "author": "ObjectId(\"6449408996050cf38e183858\")",
+          "postType": "Text",
+          "textSubmission": "This is text of first post",
+          "hotAlgo": 373893844.00644445,
+          "comments": [
+            {
+              "upvotedBy": [
+                "ObjectId(\"644940f796050cf38e18389e\")",
+                "ObjectId(\"6449408996050cf38e183858\")"
+              ],
+              "downvotedBy": [],
+              "pointsCount": 2,
+              "_id": "ObjectId(\"644940c796050cf38e183885\")",
+              "commentedBy": "ObjectId(\"6449408996050cf38e183858\")",
+              "commentBody": "Hello! This was edited.",
+              "replies": [],
+              "createdAt": "Date(\"2023-04-26T15:18:31.432Z\")",
+              "updatedAt": "Date(\"2023-04-26T15:18:56.738Z\")"
+            },
+            {
+              "upvotedBy": [
+                "ObjectId(\"644940f796050cf38e18389e\")",
+                "ObjectId(\"6449408996050cf38e183858\")"
+              ],
+              "downvotedBy": [],
+              "pointsCount": 2,
+              "_id": "ObjectId(\"6449412496050cf38e1838c2\")",
+              "commentedBy": "ObjectId(\"644940f796050cf38e18389e\")",
+              "commentBody": "This is a comment.",
+              "replies": [],
+              "createdAt": "Date(\"2023-04-26T15:20:04.833Z\")",
+              "updatedAt": "Date(\"2023-04-26T15:20:04.833Z\")"
+            }
+          ],
+          "createdAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+          "updatedAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+          "__v": 13
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+            "upvotedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "downvotedBy": [
+              "ObjectId(\"644940f796050cf38e18389e\")"
+            ],
+            "pointsCount": 0,
+            "voteRatio": 1,
+            "controversialAlgo": 2,
+            "commentCount": 2,
+            "title": "First post",
+            "subreddit": "ObjectId(\"644940a896050cf38e18385d\")",
+            "author": "ObjectId(\"6449408996050cf38e183858\")",
+            "postType": "Text",
+            "textSubmission": "This is text of first post",
+            "hotAlgo": 373893844.00644445,
+            "comments": [
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"644940c796050cf38e183885\")",
+                "commentedBy": "ObjectId(\"6449408996050cf38e183858\")",
+                "commentBody": "Hello! This was edited.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:18:31.432Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:18:56.738Z\")"
+              },
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"6449412496050cf38e1838c2\")",
+                "commentedBy": "ObjectId(\"644940f796050cf38e18389e\")",
+                "commentBody": "This is a comment.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:20:04.833Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:20:04.833Z\")"
+              }
+            ],
+            "createdAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "__v": 13
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "aa512981-0a15-45b5-acdf-1e235d49d408",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "find",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")",
+          "avatar": {
+            "exists": false,
+            "imageLink": "null",
+            "imageId": "null"
+          },
+          "karmaPoints": {
+            "postKarma": 1,
+            "commentKarma": 3
+          },
+          "posts": [
+            "ObjectId(\"644940ba96050cf38e183877\")"
+          ],
+          "subscribedSubs": [
+            "ObjectId(\"644940a896050cf38e18385d\")"
+          ],
+          "totalComments": 2,
+          "username": "pythagora",
+          "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+          "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+          "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+          "__v": 4
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "b68b3673-4f9d-48c7-94f4-2da08fc75147",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "findOne",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")",
+          "avatar": {
+            "exists": false,
+            "imageLink": "null",
+            "imageId": "null"
+          },
+          "karmaPoints": {
+            "postKarma": 1,
+            "commentKarma": 3
+          },
+          "posts": [
+            "ObjectId(\"644940ba96050cf38e183877\")"
+          ],
+          "subscribedSubs": [
+            "ObjectId(\"644940a896050cf38e18385d\")"
+          ],
+          "totalComments": 2,
+          "username": "pythagora",
+          "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+          "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+          "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+          "__v": 4
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "86020e67-b394-4806-829e-e39ab94f5c64",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "find",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")",
+          "avatar": {
+            "exists": false,
+            "imageLink": "null",
+            "imageId": "null"
+          },
+          "karmaPoints": {
+            "postKarma": 1,
+            "commentKarma": 3
+          },
+          "posts": [
+            "ObjectId(\"644940ba96050cf38e183877\")"
+          ],
+          "subscribedSubs": [
+            "ObjectId(\"644940a896050cf38e18385d\")"
+          ],
+          "totalComments": 2,
+          "username": "pythagora",
+          "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+          "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+          "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+          "__v": 4
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "ef03e42c-8c86-42d3-a460-57783d8c4d08",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")"
+        },
+        "otherArgs": {},
+        "options": {
+          "projection": {}
+        },
+        "op": "findOne",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")",
+          "avatar": {
+            "exists": false,
+            "imageLink": "null",
+            "imageId": "null"
+          },
+          "karmaPoints": {
+            "postKarma": 1,
+            "commentKarma": 3
+          },
+          "posts": [
+            "ObjectId(\"644940ba96050cf38e183877\")"
+          ],
+          "subscribedSubs": [
+            "ObjectId(\"644940a896050cf38e18385d\")"
+          ],
+          "totalComments": 2,
+          "username": "pythagora",
+          "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+          "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+          "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+          "__v": 4
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ]
+      },
+      {
+        "type": "mongodb",
+        "id": "f0ca9f9d-492c-47ab-8878-ecf577985a20",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+            "upvotedBy": [
+              "ObjectId(\"6449408996050cf38e183858\")"
+            ],
+            "downvotedBy": [
+              "ObjectId(\"644940f796050cf38e18389e\")"
+            ],
+            "pointsCount": 0,
+            "voteRatio": 1,
+            "controversialAlgo": 2,
+            "commentCount": 2,
+            "title": "First post",
+            "subreddit": "ObjectId(\"644940a896050cf38e18385d\")",
+            "author": "ObjectId(\"6449408996050cf38e183858\")",
+            "postType": "Text",
+            "textSubmission": "This is text of first post",
+            "hotAlgo": 373893844.00644445,
+            "comments": [
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"644940c796050cf38e183885\")",
+                "commentedBy": "ObjectId(\"6449408996050cf38e183858\")",
+                "commentBody": "Hello! This was edited.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:18:31.432Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:18:56.738Z\")"
+              },
+              {
+                "upvotedBy": [
+                  "ObjectId(\"644940f796050cf38e18389e\")",
+                  "ObjectId(\"6449408996050cf38e183858\")"
+                ],
+                "downvotedBy": [],
+                "pointsCount": 2,
+                "_id": "ObjectId(\"6449412496050cf38e1838c2\")",
+                "commentedBy": "ObjectId(\"644940f796050cf38e18389e\")",
+                "commentBody": "This is a comment.",
+                "replies": [],
+                "createdAt": "Date(\"2023-04-26T15:20:04.833Z\")",
+                "updatedAt": "Date(\"2023-04-26T15:20:04.833Z\")"
+              }
+            ],
+            "createdAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "updatedAt": "Date(\"2023-04-26T15:18:18.029Z\")",
+            "__v": 13
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"644940ba96050cf38e183877\")",
+          "__v": 13
+        },
+        "otherArgs": {
+          "update": {
+            "$set": {
+              "comments.0.downvotedBy": [
+                "ObjectId(\"6449408996050cf38e183858\")"
+              ],
+              "comments.0.pointsCount": 0,
+              "comments.0.upvotedBy": [
+                "ObjectId(\"644940f796050cf38e18389e\")"
+              ]
+            },
+            "$inc": {
+              "__v": 1
+            }
+          }
+        },
+        "options": {},
+        "op": "updateOne",
+        "db": "reddish",
+        "collection": "posts",
+        "mongoRes": {
+          "n": 1,
+          "nModified": 1,
+          "ok": 1
+        },
+        "postQueryRes": []
+      },
+      {
+        "type": "mongodb",
+        "id": "c8bd0b4a-f6f0-49ee-9393-3dccce0727fd",
+        "preQueryRes": [],
+        "query": {
+          "$and": [
+            {
+              "_id": "ObjectId(\"6449408996050cf38e183858\")"
+            },
+            {
+              "_id": {
+                "$ne": "ObjectId(\"6449408996050cf38e183858\")"
+              }
+            }
+          ]
+        },
+        "otherArgs": {},
+        "options": {},
+        "op": "countDocuments",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": 0,
+        "postQueryRes": []
+      },
+      {
+        "type": "mongodb",
+        "id": "04f30ecb-0d63-4f81-b51d-b25579f63f39",
+        "preQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 3
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:00:16.156Z\")",
+            "__v": 4
+          }
+        ],
+        "query": {
+          "_id": "ObjectId(\"6449408996050cf38e183858\")"
+        },
+        "otherArgs": {
+          "update": {
+            "$set": {
+              "karmaPoints.commentKarma": 2,
+              "updatedAt": "Date(\"2023-04-26T18:03:22.425Z\")"
+            }
+          }
+        },
+        "options": {},
+        "op": "updateOne",
+        "db": "reddish",
+        "collection": "users",
+        "mongoRes": {
+          "n": 1,
+          "nModified": 1,
+          "ok": 1
+        },
+        "postQueryRes": [
+          {
+            "_id": "ObjectId(\"6449408996050cf38e183858\")",
+            "avatar": {
+              "exists": false,
+              "imageLink": "null",
+              "imageId": "null"
+            },
+            "karmaPoints": {
+              "postKarma": 1,
+              "commentKarma": 2
+            },
+            "posts": [
+              "ObjectId(\"644940ba96050cf38e183877\")"
+            ],
+            "subscribedSubs": [
+              "ObjectId(\"644940a896050cf38e18385d\")"
+            ],
+            "totalComments": 2,
+            "username": "pythagora",
+            "passwordHash": "$2b$10$izLg9w7SbpR3yGFiD5lrWu7DTFBA4x.nNwUf1MqVsyVFTuSlQ7goS",
+            "createdAt": "Date(\"2023-04-26T15:17:29.064Z\")",
+            "updatedAt": "Date(\"2023-04-26T18:03:22.425Z\")",
+            "__v": 4
+          }
+        ]
+      }
+    ],
+    "query": {},
+    "params": {},
+    "asyncStore": 14,
+    "mongoQueriesCapture": 9,
+    "statusCode": 201,
+    "traceLegacy": [
+      3435
+    ],
+    "createdAt": "2023-04-26T18:03:22.430Z"
+  }
+]
